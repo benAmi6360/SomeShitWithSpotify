@@ -122,9 +122,7 @@ class SpotifyClient:
             'Content-Length': str(sys.getsizeof(req_body))
         })
         print(res)
-        if res.status_code == 201:
-            return True
-        return False
+        return res.status_code == 201
 
     def create_playlist(self, name, desc):
         name = name or 'New Playlist'

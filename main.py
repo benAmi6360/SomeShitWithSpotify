@@ -23,7 +23,7 @@ while True:
     if ans.lower() != 'y':
         continue
     while True:
-        do_quit = input("Enter 'q' to quit: ")
+        do_quit = input("Enter 'q' to quit (enter to continue): ")
         if do_quit.lower() == 'q':
             break
         uri = input("Enter a track uri (to search for a track and get his uri type 's'): ")
